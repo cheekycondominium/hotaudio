@@ -1,0 +1,45 @@
+*** nozzle-original.js	2024-12-06 21:05:45.861688903 +0100
+--- nozzle.js	2024-12-06 21:29:23.341556847 +0100
+***************
+*** 1,2 ****
+--- 1,3 ----
++ require('node-self');
+  var Pe = "0123456789abcdef"
+    , ct = []
+***************
+*** 1299,1302 ****
+--- 1300,1304 ----
+      handleExtra(e) {
+          let n = this.decode(-1, e);
++         this.extd = n
+          this.ext = pe.decode(n)
+      }
+***************
+*** 2491,2495 ****
+  }
+  var Pt, K, et, v, ye, Be, tt, Ae, Te, nt, rt, jt, Ft, Kt, it, E, ae, Le, ee, re, J, An, Tn, Ln, kn, Sn, Un, Mn, Cn, On, _n, In, Hn, $n, Rn, Gn, Pn, jn;
+- var Fn = document.querySelector("meta[name='csrf']").getAttribute("content") || "";
+  function Kn(i) {
+      return new Promise(e => setTimeout(e, i))
+--- 2493,2496 ----
+***************
+*** 3198,3207 ****
+  }
+  ;
+! if (navigator !== void 0 && navigator.vendor && navigator.vendor.indexOf("Apple") > -1 && navigator.standalone !== void 0) {
+!     let i = document.getElementById("player-volume");
+!     i && (i.style.display = "none")
+! }
+! globalThis.AudioSource = ot;
+! export {ot as AudioSource};
+  /*! Bundled license information:
+  
+--- 3199,3206 ----
+  }
+  ;
+! exports.HaxParser = we
+! exports.Ge = Ge
+! exports.Xn = Xn
+! exports.Ee = Ee
+  /*! Bundled license information:
+  

@@ -1,0 +1,8 @@
+*** browser-original.js	2024-12-06 21:23:36.293222473 +0100
+--- browser-overrides.js	2024-12-06 21:23:19.650343267 +0100
+***************
+*** 2782,2783 ****
+--- 2782,2784 ----
+          this.el.addEventListener("pause", () => {
++             console.log("Keys:\n", this.hax.keys);
+              var c;
